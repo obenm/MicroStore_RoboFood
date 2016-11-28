@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.robofood.octavioben.robofood.Menu"
+    android:background="@drawable/backgroundpayment"
+    android:padding="0dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="100"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="60dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="#00345b"
+                        android:weightSum="100">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/logomini"
+                            android:id="@+id/imageView10"
+                            android:layout_weight="80"
+                            android:scaleType="fitStart"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:paddingLeft="50dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/buttonback"
+                            android:id="@+id/payment_button_back"
+                            android:layout_weight="20"
+                            android:background="@null"
+                            android:scaleType="fitStart"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="HAVE A COUPON?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="22sp"
+                android:textStyle="normal|bold"
+                android:textColor="#383838"
+                android:textIsSelectable="false"
+                android:textScaleX="1.1"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText2"
+                    android:layout_weight="50"
+                    android:background="@drawable/field"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#343434"
+                    android:hint="COUPON"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:text="APPLY"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/button2"
+                    android:layout_weight="50"
+                    android:background="@drawable/button"
+                    android:textColor="#f6f6f6"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="PAYMENT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView34"
+                android:textSize="22sp"
+                android:textStyle="normal|bold"
+                android:textColor="#383838"
+                android:textIsSelectable="false"
+                android:textScaleX="1.1"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText12"
+                android:background="@drawable/field"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="#343434"
+                android:hint="FULL NAME"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:background="@drawable/field"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="#343434"
+                android:hint="ADDRESS LINE 1"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText8"
+                    android:background="@drawable/field"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#343434"
+                    android:hint="CITY"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="50" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText9"
+                    android:background="@drawable/field"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#343434"
+                    android:hint="STATE"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText8"
+                    android:background="@drawable/field"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#343434"
+                    android:hint="POSTAL CODE"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="50" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText9"
+                    android:background="@drawable/field"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#343434"
+                    android:hint="TELEPHONE"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+                android:layout_margin="0dp">
+
+            <TextView
+                android:text="COUPON DISCOUNT:"
+                android:layout_width="wrap_content"
+                android:id="@+id/textView36"
+                android:background="@drawable/field"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:layout_weight="35"
+                android:layout_height="40dp" />
+
+                <TextView
+                    android:text="$30.00"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/textView38"
+                    android:layout_weight="65"
+                    android:background="@drawable/field"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+            <TextView
+                android:text="ORDER TOTAL"
+                android:layout_width="wrap_content"
+                android:id="@+id/textView36"
+                android:background="@drawable/field"
+                android:layout_marginLeft="15dp"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:layout_weight="35"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:text="$30.00"
+                android:layout_width="wrap_content"
+                android:id="@+id/textView38"
+                android:layout_weight="65"
+                android:background="@drawable/field"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+            <Button
+                android:text="PAYMENT"
+                android:layout_width="match_parent"
+                android:id="@+id/button3"
+                android:background="@drawable/button"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:textColor="#f6f6f6"
+                android:layout_height="40dp"
+                android:layout_marginBottom="25dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
