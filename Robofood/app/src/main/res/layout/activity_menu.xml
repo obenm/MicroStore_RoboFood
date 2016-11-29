@@ -175,7 +175,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/borderitem"
-                    android:layout_height="135dp">
+                    android:id="@+id/menu_item_1"
+                    android:visibility="gone"
+                    android:layout_height="150dp">
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -184,13 +186,13 @@
                         android:weightSum="100">
 
                         <ImageView
-                            android:layout_width="115dp"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/comidaejemplo"
-                            android:id="@+id/imageView9"
+                            android:id="@+id/menu_image_1"
                             android:maxWidth="100dp"
                             android:scaleType="fitStart"
-                            android:adjustViewBounds="false" />
+                            android:adjustViewBounds="false"
+                            android:layout_width="140dp" />
 
                         <LinearLayout
                             android:orientation="vertical"
@@ -201,16 +203,17 @@
                                 android:text="Lorem ipsum dolor sit amet"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView9"
+                                android:id="@+id/menu_name_1"
                                 android:textStyle="normal|bold"
                                 android:textColor="#434343"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                android:maxLines="1" />
 
                             <TextView
                                 android:text="Vestibulum venenatis tristique placerat. Nunc rhoncus leo pellentesque, pulvinar dui vitae, mollis felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textViewTest"
+                                android:id="@+id/menu_detail_1"
                                 android:textColor="#434343"
                                 android:textSize="12sp"
                                 android:singleLine="false"
@@ -220,12 +223,20 @@
 
                             <TextView
                                 android:text="$10.30"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView7"
+                                android:id="@+id/menu_price_1"
                                 android:textColor="#59ad27"
                                 android:textStyle="normal|bold"
                                 android:textSize="16sp" />
+
+                            <Button
+                                android:text="Order"
+                                android:layout_width="87dp"
+                                android:id="@+id/menu_button_order_1"
+                                android:layout_height="25dp"
+                                android:background="@drawable/button"
+                                android:textColor="#f6f6f6" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -238,7 +249,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/borderitem"
-                    android:layout_height="135dp">
+                    android:layout_height="150dp"
+                    android:id="@+id/menu_item_2"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -247,10 +260,10 @@
                         android:weightSum="100">
 
                         <ImageView
-                            android:layout_width="115dp"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/comidaejemplo"
-                            android:id="@+id/imageView9"
+                            android:id="@+id/menu_image_2"
                             android:maxWidth="100dp"
                             android:scaleType="fitStart"
                             android:adjustViewBounds="false" />
@@ -264,7 +277,7 @@
                                 android:text="Lorem ipsum dolor sit amet"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView9"
+                                android:id="@+id/menu_name_2"
                                 android:textStyle="normal|bold"
                                 android:textColor="#434343"
                                 android:textSize="16sp" />
@@ -273,7 +286,7 @@
                                 android:text="Vestibulum venenatis tristique placerat. Nunc rhoncus leo pellentesque, pulvinar dui vitae, mollis felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView8"
+                                android:id="@+id/menu_detail_2"
                                 android:textColor="#434343"
                                 android:textSize="12sp"
                                 android:singleLine="false"
@@ -285,10 +298,18 @@
                                 android:text="$10.30"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView7"
+                                android:id="@+id/menu_price_2"
                                 android:textColor="#59ad27"
                                 android:textStyle="normal|bold"
                                 android:textSize="16sp" />
+
+                            <Button
+                                android:text="Order"
+                                android:layout_width="87dp"
+                                android:id="@+id/menu_button_order_2"
+                                android:layout_height="25dp"
+                                android:background="@drawable/button"
+                                android:textColor="#f6f6f6" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -301,7 +322,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/borderitem"
-                    android:layout_height="135dp">
+                    android:layout_height="150dp"
+                    android:id="@+id/menu_item_3"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -310,10 +333,10 @@
                         android:weightSum="100">
 
                         <ImageView
-                            android:layout_width="115dp"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/comidaejemplo"
-                            android:id="@+id/imageView9"
+                            android:id="@+id/menu_image_3"
                             android:maxWidth="100dp"
                             android:scaleType="fitStart"
                             android:adjustViewBounds="false" />
@@ -327,7 +350,7 @@
                                 android:text="Lorem ipsum dolor sit amet"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView9"
+                                android:id="@+id/menu_name_3"
                                 android:textStyle="normal|bold"
                                 android:textColor="#434343"
                                 android:textSize="16sp" />
@@ -336,7 +359,7 @@
                                 android:text="Vestibulum venenatis tristique placerat. Nunc rhoncus leo pellentesque, pulvinar dui vitae, mollis felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView8"
+                                android:id="@+id/menu_detail_3"
                                 android:textColor="#434343"
                                 android:textSize="12sp"
                                 android:singleLine="false"
@@ -348,10 +371,18 @@
                                 android:text="$10.30"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView7"
+                                android:id="@+id/menu_price_3"
                                 android:textColor="#59ad27"
                                 android:textStyle="normal|bold"
                                 android:textSize="16sp" />
+
+                            <Button
+                                android:text="Order"
+                                android:layout_width="87dp"
+                                android:id="@+id/menu_button_order_3"
+                                android:layout_height="25dp"
+                                android:background="@drawable/button"
+                                android:textColor="#f6f6f6" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -364,7 +395,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/borderitem"
-                    android:layout_height="135dp">
+                    android:layout_height="150dp"
+                    android:id="@+id/menu_item_4"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -373,10 +406,10 @@
                         android:weightSum="100">
 
                         <ImageView
-                            android:layout_width="115dp"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/comidaejemplo"
-                            android:id="@+id/imageView9"
+                            android:id="@+id/menu_image_4"
                             android:maxWidth="100dp"
                             android:scaleType="fitStart"
                             android:adjustViewBounds="false" />
@@ -390,7 +423,7 @@
                                 android:text="Lorem ipsum dolor sit amet"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView9"
+                                android:id="@+id/menu_name_4"
                                 android:textStyle="normal|bold"
                                 android:textColor="#434343"
                                 android:textSize="16sp" />
@@ -399,7 +432,7 @@
                                 android:text="Vestibulum venenatis tristique placerat. Nunc rhoncus leo pellentesque, pulvinar dui vitae, mollis felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView8"
+                                android:id="@+id/menu_detail_4"
                                 android:textColor="#434343"
                                 android:textSize="12sp"
                                 android:singleLine="false"
@@ -411,10 +444,18 @@
                                 android:text="$10.30"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView7"
+                                android:id="@+id/menu_price_4"
                                 android:textColor="#59ad27"
                                 android:textStyle="normal|bold"
                                 android:textSize="16sp" />
+
+                            <Button
+                                android:text="Order"
+                                android:layout_width="87dp"
+                                android:id="@+id/menu_button_order_4"
+                                android:layout_height="25dp"
+                                android:background="@drawable/button"
+                                android:textColor="#f6f6f6" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -427,7 +468,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/borderitem"
-                    android:layout_height="135dp">
+                    android:layout_height="150dp"
+                    android:id="@+id/menu_item_5"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -436,10 +479,10 @@
                         android:weightSum="100">
 
                         <ImageView
-                            android:layout_width="115dp"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/comidaejemplo"
-                            android:id="@+id/imageView9"
+                            android:id="@+id/menu_image_5"
                             android:maxWidth="100dp"
                             android:scaleType="fitStart"
                             android:adjustViewBounds="false" />
@@ -453,7 +496,7 @@
                                 android:text="Lorem ipsum dolor sit amet"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView9"
+                                android:id="@+id/menu_name_5"
                                 android:textStyle="normal|bold"
                                 android:textColor="#434343"
                                 android:textSize="16sp" />
@@ -462,7 +505,7 @@
                                 android:text="Vestibulum venenatis tristique placerat. Nunc rhoncus leo pellentesque, pulvinar dui vitae, mollis felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView8"
+                                android:id="@+id/menu_detail_5"
                                 android:textColor="#434343"
                                 android:textSize="12sp"
                                 android:singleLine="false"
@@ -474,10 +517,18 @@
                                 android:text="$10.30"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView7"
+                                android:id="@+id/menu_price_5"
                                 android:textColor="#59ad27"
                                 android:textStyle="normal|bold"
                                 android:textSize="16sp" />
+
+                            <Button
+                                android:text="Order"
+                                android:layout_width="87dp"
+                                android:id="@+id/menu_button_order_5"
+                                android:layout_height="25dp"
+                                android:background="@drawable/button"
+                                android:textColor="#f6f6f6" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -490,7 +541,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/borderitem"
-                    android:layout_height="135dp">
+                    android:layout_height="150dp"
+                    android:id="@+id/menu_item_6"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -499,10 +552,10 @@
                         android:weightSum="100">
 
                         <ImageView
-                            android:layout_width="115dp"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/comidaejemplo"
-                            android:id="@+id/imageView9"
+                            android:id="@+id/menu_image_6"
                             android:maxWidth="100dp"
                             android:scaleType="fitStart"
                             android:adjustViewBounds="false" />
@@ -516,7 +569,7 @@
                                 android:text="Lorem ipsum dolor sit amet"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView9"
+                                android:id="@+id/menu_name_6"
                                 android:textStyle="normal|bold"
                                 android:textColor="#434343"
                                 android:textSize="16sp" />
@@ -525,22 +578,30 @@
                                 android:text="Vestibulum venenatis tristique placerat. Nunc rhoncus leo pellentesque, pulvinar dui vitae, mollis felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView8"
+                                android:id="@+id/menu_detail_6"
                                 android:textColor="#434343"
                                 android:textSize="12sp"
                                 android:singleLine="false"
-                                android:maxLines="4"
-                                android:minLines="4"
+                                android:maxLines="3"
+                                android:minLines="3"
                                 android:layout_marginBottom="3dp" />
 
                             <TextView
                                 android:text="$10.30"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView7"
+                                android:id="@+id/menu_price_6"
                                 android:textColor="#59ad27"
                                 android:textStyle="normal|bold"
                                 android:textSize="16sp" />
+
+                            <Button
+                                android:text="Order"
+                                android:layout_width="87dp"
+                                android:id="@+id/menu_button_order_6"
+                                android:layout_height="25dp"
+                                android:background="@drawable/button"
+                                android:textColor="#f6f6f6" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -653,7 +714,8 @@
                             android:layout_marginRight="15dp"
                             android:background="#e0e4e8"
                             android:layout_height="55dp"
-                            android:id="@+id/menu_cartitem">
+                            android:id="@+id/menu_cart_item_1"
+                            android:visibility="gone">
 
                             <LinearLayout
                                 android:orientation="horizontal"
@@ -663,7 +725,7 @@
 
                                 <ImageButton
                                     app:srcCompat="@drawable/buttonx"
-                                    android:id="@+id/imageButton"
+                                    android:id="@+id/menu_cart_close_button_1"
                                     android:background="@null"
                                     android:scaleType="fitStart"
                                     android:cropToPadding="true"
@@ -680,7 +742,7 @@
                                 <ImageView
                                     android:layout_height="40dp"
                                     app:srcCompat="@drawable/comidaejemplo"
-                                    android:id="@+id/imageView3"
+                                    android:id="@+id/menu_cart_image_1"
                                     android:layout_weight="20"
                                     android:layout_width="40dp"
                                     android:layout_marginTop="5dp"
@@ -696,7 +758,7 @@
                                         android:text="Lorem ipsum dolor sit amet"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/textView"
+                                        android:id="@+id/menu_cart_name_1"
                                         android:layout_weight="32"
                                         android:singleLine="false"
                                         android:minLines="2"
@@ -709,7 +771,7 @@
                                         android:text="$13.30"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/textView2"
+                                        android:id="@+id/menu_cart_price_1"
                                         android:layout_weight="32"
                                         android:paddingBottom="5dp"
                                         android:textStyle="normal|bold"
@@ -720,7 +782,7 @@
                                     android:text="2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/textView4"
+                                    android:id="@+id/menu_cart_cuantity_1"
                                     android:layout_weight="15"
                                     android:layout_marginTop="20dp" />
 
@@ -734,7 +796,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:srcCompat="@drawable/buttonmore"
-                                        android:id="@+id/imageButton5"
+                                        android:id="@+id/menu_cart_more_1"
                                         android:background="@null"
                                         android:scaleType="fitStart"
                                         android:adjustViewBounds="true"
@@ -746,7 +808,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:srcCompat="@drawable/buttonless"
-                                        android:id="@+id/imageButton7"
+                                        android:id="@+id/menu_cart_less_1"
                                         android:background="@null"
                                         android:scaleType="fitStart"
                                         android:adjustViewBounds="true"
@@ -764,7 +826,8 @@
                             android:layout_marginRight="15dp"
                             android:background="#e0e4e8"
                             android:layout_height="55dp"
-                            android:id="@+id/menu_cartitem">
+                            android:id="@+id/menu_cart_item_2"
+                            android:visibility="gone">
 
                             <LinearLayout
                                 android:orientation="horizontal"
@@ -774,7 +837,7 @@
 
                                 <ImageButton
                                     app:srcCompat="@drawable/buttonx"
-                                    android:id="@+id/imageButton"
+                                    android:id="@+id/menu_cart_close_button_2"
                                     android:background="@null"
                                     android:scaleType="fitStart"
                                     android:cropToPadding="true"
@@ -791,7 +854,7 @@
                                 <ImageView
                                     android:layout_height="40dp"
                                     app:srcCompat="@drawable/comidaejemplo"
-                                    android:id="@+id/imageView3"
+                                    android:id="@+id/menu_cart_image_2"
                                     android:layout_weight="20"
                                     android:layout_width="40dp"
                                     android:layout_marginTop="5dp"
@@ -807,7 +870,7 @@
                                         android:text="Lorem ipsum dolor sit amet"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/textView"
+                                        android:id="@+id/menu_cart_name_2"
                                         android:layout_weight="32"
                                         android:singleLine="false"
                                         android:minLines="2"
@@ -820,7 +883,7 @@
                                         android:text="$13.30"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/textView2"
+                                        android:id="@+id/menu_cart_price_2"
                                         android:layout_weight="32"
                                         android:paddingBottom="5dp"
                                         android:textStyle="normal|bold"
@@ -831,7 +894,7 @@
                                     android:text="2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/textView4"
+                                    android:id="@+id/menu_cart_cuantity_2"
                                     android:layout_weight="15"
                                     android:layout_marginTop="20dp" />
 
@@ -845,7 +908,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:srcCompat="@drawable/buttonmore"
-                                        android:id="@+id/imageButton5"
+                                        android:id="@+id/menu_cart_more_2"
                                         android:background="@null"
                                         android:scaleType="fitStart"
                                         android:adjustViewBounds="true"
@@ -857,7 +920,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:srcCompat="@drawable/buttonless"
-                                        android:id="@+id/imageButton7"
+                                        android:id="@+id/menu_cart_less_2"
                                         android:background="@null"
                                         android:scaleType="fitStart"
                                         android:adjustViewBounds="true"
@@ -875,7 +938,8 @@
                             android:layout_marginRight="15dp"
                             android:background="#e0e4e8"
                             android:layout_height="55dp"
-                            android:id="@+id/menu_cartitem">
+                            android:id="@+id/menu_cart_item_3"
+                            android:visibility="gone">
 
                             <LinearLayout
                                 android:orientation="horizontal"
@@ -885,7 +949,7 @@
 
                                 <ImageButton
                                     app:srcCompat="@drawable/buttonx"
-                                    android:id="@+id/imageButton"
+                                    android:id="@+id/menu_cart_close_button_3"
                                     android:background="@null"
                                     android:scaleType="fitStart"
                                     android:cropToPadding="true"
@@ -902,7 +966,7 @@
                                 <ImageView
                                     android:layout_height="40dp"
                                     app:srcCompat="@drawable/comidaejemplo"
-                                    android:id="@+id/imageView3"
+                                    android:id="@+id/menu_cart_image_3"
                                     android:layout_weight="20"
                                     android:layout_width="40dp"
                                     android:layout_marginTop="5dp"
@@ -918,7 +982,7 @@
                                         android:text="Lorem ipsum dolor sit amet"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/textView"
+                                        android:id="@+id/menu_cart_name_3"
                                         android:layout_weight="32"
                                         android:singleLine="false"
                                         android:minLines="2"
@@ -931,7 +995,7 @@
                                         android:text="$13.30"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/textView2"
+                                        android:id="@+id/menu_cart_price_3"
                                         android:layout_weight="32"
                                         android:paddingBottom="5dp"
                                         android:textStyle="normal|bold"
@@ -942,7 +1006,7 @@
                                     android:text="2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/textView4"
+                                    android:id="@+id/menu_cart_cuantity_3"
                                     android:layout_weight="15"
                                     android:layout_marginTop="20dp" />
 
@@ -956,7 +1020,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:srcCompat="@drawable/buttonmore"
-                                        android:id="@+id/imageButton5"
+                                        android:id="@+id/menu_cart_more_3"
                                         android:background="@null"
                                         android:scaleType="fitStart"
                                         android:adjustViewBounds="true"
@@ -968,7 +1032,343 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:srcCompat="@drawable/buttonless"
-                                        android:id="@+id/imageButton7"
+                                        android:id="@+id/menu_cart_less_3"
+                                        android:background="@null"
+                                        android:scaleType="fitStart"
+                                        android:adjustViewBounds="true"
+                                        android:cropToPadding="true" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#e0e4e8"
+                            android:layout_height="55dp"
+                            android:id="@+id/menu_cart_item_4"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="100">
+
+                                <ImageButton
+                                    app:srcCompat="@drawable/buttonx"
+                                    android:id="@+id/menu_cart_close_button_4"
+                                    android:background="@null"
+                                    android:scaleType="fitStart"
+                                    android:cropToPadding="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_height="35dp"
+                                    android:paddingBottom="15dp"
+                                    android:maxHeight="35dp"
+                                    android:maxWidth="35dp"
+                                    android:layout_width="35dp"
+                                    android:layout_weight="10" />
+
+                                <ImageView
+                                    android:layout_height="40dp"
+                                    app:srcCompat="@drawable/comidaejemplo"
+                                    android:id="@+id/menu_cart_image_4"
+                                    android:layout_weight="20"
+                                    android:layout_width="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40">
+
+                                    <TextView
+                                        android:text="Lorem ipsum dolor sit amet"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/menu_cart_name_4"
+                                        android:layout_weight="32"
+                                        android:singleLine="false"
+                                        android:minLines="2"
+                                        android:maxLines="2"
+                                        android:textStyle="normal|bold"
+                                        android:textColor="#434343"
+                                        android:layout_marginTop="5dp" />
+
+                                    <TextView
+                                        android:text="$13.30"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/menu_cart_price_4"
+                                        android:layout_weight="32"
+                                        android:paddingBottom="5dp"
+                                        android:textStyle="normal|bold"
+                                        android:textColor="#50a12b" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/menu_cart_cuantity_4"
+                                    android:layout_weight="15"
+                                    android:layout_marginTop="20dp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15">
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/buttonmore"
+                                        android:id="@+id/menu_cart_more_4"
+                                        android:background="@null"
+                                        android:scaleType="fitStart"
+                                        android:adjustViewBounds="true"
+                                        android:cropToPadding="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp" />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/buttonless"
+                                        android:id="@+id/menu_cart_less_4"
+                                        android:background="@null"
+                                        android:scaleType="fitStart"
+                                        android:adjustViewBounds="true"
+                                        android:cropToPadding="true" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#e0e4e8"
+                            android:layout_height="55dp"
+                            android:id="@+id/menu_cart_item_5"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="100">
+
+                                <ImageButton
+                                    app:srcCompat="@drawable/buttonx"
+                                    android:id="@+id/menu_cart_close_button_5"
+                                    android:background="@null"
+                                    android:scaleType="fitStart"
+                                    android:cropToPadding="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_height="35dp"
+                                    android:paddingBottom="15dp"
+                                    android:maxHeight="35dp"
+                                    android:maxWidth="35dp"
+                                    android:layout_width="35dp"
+                                    android:layout_weight="10" />
+
+                                <ImageView
+                                    android:layout_height="40dp"
+                                    app:srcCompat="@drawable/comidaejemplo"
+                                    android:id="@+id/menu_cart_image_5"
+                                    android:layout_weight="20"
+                                    android:layout_width="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40">
+
+                                    <TextView
+                                        android:text="Lorem ipsum dolor sit amet"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/menu_cart_name_5"
+                                        android:layout_weight="32"
+                                        android:singleLine="false"
+                                        android:minLines="2"
+                                        android:maxLines="2"
+                                        android:textStyle="normal|bold"
+                                        android:textColor="#434343"
+                                        android:layout_marginTop="5dp" />
+
+                                    <TextView
+                                        android:text="$13.30"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/menu_cart_price_5"
+                                        android:layout_weight="32"
+                                        android:paddingBottom="5dp"
+                                        android:textStyle="normal|bold"
+                                        android:textColor="#50a12b" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/menu_cart_cuantity_5"
+                                    android:layout_weight="15"
+                                    android:layout_marginTop="20dp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15">
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/buttonmore"
+                                        android:id="@+id/menu_cart_more_5"
+                                        android:background="@null"
+                                        android:scaleType="fitStart"
+                                        android:adjustViewBounds="true"
+                                        android:cropToPadding="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp" />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/buttonless"
+                                        android:id="@+id/menu_cart_less_5"
+                                        android:background="@null"
+                                        android:scaleType="fitStart"
+                                        android:adjustViewBounds="true"
+                                        android:cropToPadding="true" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#e0e4e8"
+                            android:layout_height="55dp"
+                            android:id="@+id/menu_cart_item_6"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="100">
+
+                                <ImageButton
+                                    app:srcCompat="@drawable/buttonx"
+                                    android:id="@+id/menu_cart_close_button_6"
+                                    android:background="@null"
+                                    android:scaleType="fitStart"
+                                    android:cropToPadding="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_height="35dp"
+                                    android:paddingBottom="15dp"
+                                    android:maxHeight="35dp"
+                                    android:maxWidth="35dp"
+                                    android:layout_width="35dp"
+                                    android:layout_weight="10" />
+
+                                <ImageView
+                                    android:layout_height="40dp"
+                                    app:srcCompat="@drawable/comidaejemplo"
+                                    android:id="@+id/menu_cart_image_6"
+                                    android:layout_weight="20"
+                                    android:layout_width="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40">
+
+                                    <TextView
+                                        android:text="Lorem ipsum dolor sit amet"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/menu_cart_name_6"
+                                        android:layout_weight="32"
+                                        android:singleLine="false"
+                                        android:minLines="2"
+                                        android:maxLines="2"
+                                        android:textStyle="normal|bold"
+                                        android:textColor="#434343"
+                                        android:layout_marginTop="5dp" />
+
+                                    <TextView
+                                        android:text="$13.30"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/menu_cart_price_6"
+                                        android:layout_weight="32"
+                                        android:paddingBottom="5dp"
+                                        android:textStyle="normal|bold"
+                                        android:textColor="#50a12b" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/menu_cart_cuantity_6"
+                                    android:layout_weight="15"
+                                    android:layout_marginTop="20dp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15">
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/buttonmore"
+                                        android:id="@+id/menu_cart_more_6"
+                                        android:background="@null"
+                                        android:scaleType="fitStart"
+                                        android:adjustViewBounds="true"
+                                        android:cropToPadding="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp" />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/buttonless"
+                                        android:id="@+id/menu_cart_less_6"
                                         android:background="@null"
                                         android:scaleType="fitStart"
                                         android:adjustViewBounds="true"
@@ -983,7 +1383,7 @@
                             android:text="$30.00"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/textView5"
+                            android:id="@+id/menu_cart_total"
                             android:textStyle="normal|bold"
                             android:textSize="24sp"
                             android:textAlignment="center"
