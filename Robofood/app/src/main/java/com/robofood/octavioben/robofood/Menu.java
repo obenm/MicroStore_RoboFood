@@ -66,6 +66,15 @@ public class Menu extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
+    FrameLayout alert_frame;
+    Button alert_btn;
+
+    private void mostrarAlerta(String s){
+        TextView alert_text = (TextView) findViewById(R.id.alert_text);
+        alert_text.setText(s);
+        alert_frame.setVisibility(View.VISIBLE);
+    }
+
     Button menu_button_order_1, menu_button_order_2, menu_button_order_3, menu_button_order_4, menu_button_order_5, menu_button_order_6;
     FrameLayout menu_cart_item_1, menu_cart_item_2, menu_cart_item_3, menu_cart_item_4, menu_cart_item_5, menu_cart_item_6;
     ImageView menu_cart_image_1, menu_cart_image_2, menu_cart_image_3, menu_cart_image_4, menu_cart_image_5, menu_cart_image_6;
@@ -531,8 +540,33 @@ public class Menu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent Menu = new Intent(Menu.this, Payment.class);
                 startActivity(Menu);
+                Variables v = Variables.getInstance();
+                v.setTotal(carrito_total);
             }
         });
+
+        TextView menu_username = (TextView) findViewById(R.id.menu_username);
+        Variables v = Variables.getInstance();
+        menu_username.setText(v.getUser());
+
+        alert_frame = (FrameLayout) findViewById(R.id.alert_frame);
+
+        alert_btn = (Button) findViewById(R.id.alert_btn);
+        alert_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert_frame.setVisibility(View.GONE);
+            }
+        });
+
+        ImageButton menu_info_button = (ImageButton) findViewById(R.id.menu_info_button);
+        menu_info_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 mostrarAlerta("Developed by Octavio Benitez");
+            }
+        });
+
 
         hiloconexion = new ObtenerWebService();
         hiloconexion.execute(GET);

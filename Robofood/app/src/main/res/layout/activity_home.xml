@@ -103,4 +103,61 @@
         </FrameLayout>
 
     </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/alert_frame"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#000">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:background="#002f52"
+            android:layout_marginTop="275dp"
+            android:layout_height="wrap_content"
+            android:minHeight="125dp"
+            android:layout_marginLeft="60dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Ha Ocurrido Un Error"
+                    android:layout_width="match_parent"
+                    android:id="@+id/alert_text"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    android:textColor="#fefefe"
+                    android:maxLines="2"
+                    android:maxHeight="130dp"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:text="Accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/alert_btn"
+                    android:background="@drawable/button"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
 </RelativeLayout>
