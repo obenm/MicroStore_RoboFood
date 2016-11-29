@@ -174,7 +174,7 @@ public class Menu extends AppCompatActivity {
             }
             menu_cart_image_1.setImageBitmap(menu_bitmap_1);
             menu_cart_name_1.setText((String) datosJSON.getJSONObject(0).getString("name"));
-            menu_cart_price_1.setText((String) datosJSON.getJSONObject(0).getString("price"));
+            menu_cart_price_1.setText("$ " + (String) datosJSON.getJSONObject(0).getString("price"));
             carrito_item_price[0] = Double.parseDouble(datosJSON.getJSONObject(0).getString("price"));
             menu_cart_cuantity_1.setText(Integer.toString(carrito_item_cuantity[0]));
             menu_cart_item_1.setVisibility(View.VISIBLE);
@@ -189,7 +189,7 @@ public class Menu extends AppCompatActivity {
             }
             menu_cart_image_2.setImageBitmap(menu_bitmap_2);
             menu_cart_name_2.setText((String) datosJSON.getJSONObject(1).getString("name"));
-            menu_cart_price_2.setText((String) datosJSON.getJSONObject(1).getString("price"));
+            menu_cart_price_2.setText("$ " + (String) datosJSON.getJSONObject(1).getString("price"));
             carrito_item_price[1] = Double.parseDouble(datosJSON.getJSONObject(1).getString("price"));
             menu_cart_cuantity_2.setText(Integer.toString(carrito_item_cuantity[1]));
             menu_cart_item_2.setVisibility(View.VISIBLE);
@@ -204,7 +204,7 @@ public class Menu extends AppCompatActivity {
             }
             menu_cart_image_3.setImageBitmap(menu_bitmap_3);
             menu_cart_name_3.setText((String) datosJSON.getJSONObject(2).getString("name"));
-            menu_cart_price_3.setText((String) datosJSON.getJSONObject(2).getString("price"));
+            menu_cart_price_3.setText("$ " + (String) datosJSON.getJSONObject(2).getString("price"));
             carrito_item_price[2] = Double.parseDouble(datosJSON.getJSONObject(2).getString("price"));
             menu_cart_cuantity_3.setText(Integer.toString(carrito_item_cuantity[2]));
             menu_cart_item_3.setVisibility(View.VISIBLE);
@@ -219,7 +219,7 @@ public class Menu extends AppCompatActivity {
             }
             menu_cart_image_4.setImageBitmap(menu_bitmap_4);
             menu_cart_name_4.setText((String) datosJSON.getJSONObject(3).getString("name"));
-            menu_cart_price_4.setText((String) datosJSON.getJSONObject(3).getString("price"));
+            menu_cart_price_4.setText("$ " + (String) datosJSON.getJSONObject(3).getString("price"));
             carrito_item_price[3] = Double.parseDouble(datosJSON.getJSONObject(3).getString("price"));
             menu_cart_cuantity_4.setText(Integer.toString(carrito_item_cuantity[3]));
             menu_cart_item_4.setVisibility(View.VISIBLE);
@@ -234,7 +234,7 @@ public class Menu extends AppCompatActivity {
             }
             menu_cart_image_5.setImageBitmap(menu_bitmap_5);
             menu_cart_name_5.setText((String) datosJSON.getJSONObject(4).getString("name"));
-            menu_cart_price_5.setText((String) datosJSON.getJSONObject(4).getString("price"));
+            menu_cart_price_5.setText("$ " + (String) datosJSON.getJSONObject(4).getString("price"));
             carrito_item_price[4] = Double.parseDouble(datosJSON.getJSONObject(4).getString("price"));
             menu_cart_cuantity_5.setText(Integer.toString(carrito_item_cuantity[4]));
             menu_cart_item_5.setVisibility(View.VISIBLE);
@@ -249,7 +249,7 @@ public class Menu extends AppCompatActivity {
             }
             menu_cart_image_6.setImageBitmap(menu_bitmap_6);
             menu_cart_name_6.setText((String) datosJSON.getJSONObject(5).getString("name"));
-            menu_cart_price_6.setText((String) datosJSON.getJSONObject(5).getString("price"));
+            menu_cart_price_6.setText("$ " + (String) datosJSON.getJSONObject(5).getString("price"));
             carrito_item_price[5] = Double.parseDouble(datosJSON.getJSONObject(5).getString("price"));
             menu_cart_cuantity_6.setText(Integer.toString(carrito_item_cuantity[5]));
             menu_cart_item_6.setVisibility(View.VISIBLE);

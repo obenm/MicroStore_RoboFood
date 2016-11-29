@@ -736,17 +736,17 @@
                                     android:paddingBottom="15dp"
                                     android:maxHeight="35dp"
                                     android:maxWidth="35dp"
-                                    android:layout_width="35dp"
+                                    android:layout_width="wrap_content"
                                     android:layout_weight="10" />
 
                                 <ImageView
-                                    android:layout_height="40dp"
                                     app:srcCompat="@drawable/comidaejemplo"
                                     android:id="@+id/menu_cart_image_1"
                                     android:layout_weight="20"
                                     android:layout_width="40dp"
                                     android:layout_marginTop="5dp"
-                                    android:layout_marginBottom="5dp" />
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_height="wrap_content" />
 
                                 <LinearLayout
                                     android:orientation="vertical"
@@ -848,11 +848,11 @@
                                     android:paddingBottom="15dp"
                                     android:maxHeight="35dp"
                                     android:maxWidth="35dp"
-                                    android:layout_width="35dp"
+                                    android:layout_width="wrap_content"
                                     android:layout_weight="10" />
 
                                 <ImageView
-                                    android:layout_height="40dp"
+                                    android:layout_height="wrap_content"
                                     app:srcCompat="@drawable/comidaejemplo"
                                     android:id="@+id/menu_cart_image_2"
                                     android:layout_weight="20"
@@ -960,11 +960,11 @@
                                     android:paddingBottom="15dp"
                                     android:maxHeight="35dp"
                                     android:maxWidth="35dp"
-                                    android:layout_width="35dp"
+                                    android:layout_width="wrap_content"
                                     android:layout_weight="10" />
 
                                 <ImageView
-                                    android:layout_height="40dp"
+                                    android:layout_height="wrap_content"
                                     app:srcCompat="@drawable/comidaejemplo"
                                     android:id="@+id/menu_cart_image_3"
                                     android:layout_weight="20"
@@ -1072,11 +1072,11 @@
                                     android:paddingBottom="15dp"
                                     android:maxHeight="35dp"
                                     android:maxWidth="35dp"
-                                    android:layout_width="35dp"
+                                    android:layout_width="wrap_content"
                                     android:layout_weight="10" />
 
                                 <ImageView
-                                    android:layout_height="40dp"
+                                    android:layout_height="wrap_content"
                                     app:srcCompat="@drawable/comidaejemplo"
                                     android:id="@+id/menu_cart_image_4"
                                     android:layout_weight="20"
@@ -1184,11 +1184,11 @@
                                     android:paddingBottom="15dp"
                                     android:maxHeight="35dp"
                                     android:maxWidth="35dp"
-                                    android:layout_width="35dp"
+                                    android:layout_width="wrap_content"
                                     android:layout_weight="10" />
 
                                 <ImageView
-                                    android:layout_height="40dp"
+                                    android:layout_height="wrap_content"
                                     app:srcCompat="@drawable/comidaejemplo"
                                     android:id="@+id/menu_cart_image_5"
                                     android:layout_weight="20"
@@ -1296,11 +1296,11 @@
                                     android:paddingBottom="15dp"
                                     android:maxHeight="35dp"
                                     android:maxWidth="35dp"
-                                    android:layout_width="35dp"
+                                    android:layout_width="wrap_content"
                                     android:layout_weight="10" />
 
                                 <ImageView
-                                    android:layout_height="40dp"
+                                    android:layout_height="wrap_content"
                                     app:srcCompat="@drawable/comidaejemplo"
                                     android:id="@+id/menu_cart_image_6"
                                     android:layout_weight="20"
